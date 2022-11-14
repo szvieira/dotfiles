@@ -1,4 +1,4 @@
-#Configuração PowerShell
+# Configuração PowerShell
 
 Instale o oh-my-posh através do comando: `choco install oh-my-posh`
 
