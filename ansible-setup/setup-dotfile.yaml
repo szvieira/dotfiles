@@ -1,0 +1,12 @@
+- hosts: localhost
+  tasks:
+    - name: Enable helix package
+      community.general.copr:
+        host:  copr.fedorainfracloud.org
+        state: enabled
+        name: varlad/helix
+
+    - name: Installing helix via DNF
+      ansible.builtin.dnf:
+        name: helix
+        state: latest
